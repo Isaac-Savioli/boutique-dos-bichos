@@ -56,8 +56,8 @@ nav a:hover {
 }
 
 .seta {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 25px;
     margin-top: auto;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -313,4 +313,35 @@ icone img {
 
 .por-que-nos-escolher .cachorro-impressionado-container img {
     width: 100%;
+}
+
+.por-que-nos-escolher .botao {
+    margin-top: 30px;
+    transition: all 0.2s ease;
+}
+
+.por-que-nos-escolher .botao {
+    color: white;
+    width: fit-content;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: var(--cor2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Poppins;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.por-que-nos-escolher .botao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 12px #f2984a90;
+}
+
+footer {
+    background-color: var(--cor4);
+    font-family: Nunito;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
