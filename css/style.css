@@ -74,7 +74,7 @@ nav a:hover {
     display: flex;
     position: relative;
     background: linear-gradient(160deg, var(--cor-gradient1) 20%, var(--cor-gradient2) 100%);
-    height: 550px;
+    height: 600px;
     align-items: center;
     overflow: hidden;
     box-shadow: 0px 10px 20px -20px black;
@@ -162,8 +162,9 @@ icone img {
 }
 
 .sobre {
+    justify-content: center;
+    margin: auto;
     display: flex;
-    margin: 90px;
     margin-bottom: 150px;
 }
 
@@ -191,7 +192,7 @@ icone img {
 .imagem-sobre {
     padding-left: 70px;
     /*Talver aumentar o padding */
-    width: 620px;
+    width: 550px;
 }
 
 .imagem-sobre img {
@@ -201,6 +202,7 @@ icone img {
 }
 
 .localizacao {
+    z-index: 10;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -208,8 +210,8 @@ icone img {
 }
 
 .iframe-container {
-    width: 620px;
-    height: 500px;
+    min-width: 520px;
+    height: 400px;
     padding-left: 70px;
 }
 
@@ -255,4 +257,60 @@ icone img {
     color: var(--cor1);
     font-weight: 900;
     font-size: 17px;
+}
+
+.por-que-nos-escolher {
+    position: relative;
+    height: 500px;
+    background: #1C4E80;
+    background: linear-gradient(132deg, rgba(28, 78, 128, 1) 28%, rgba(47, 128, 237, 1) 100%);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    font-family: Nunito;
+    overflow: hidden;
+}
+
+.por-que-nos-escolher .titulo {
+    color: var(--cor2);
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.por-que-nos-escolher .titulo i {
+    margin-right: 10px;
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container h2 {
+    font-size: 26px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container p {
+    margin-bottom: 20px;
+}
+
+.por-que-nos-escolher .cachorro-impressionado-container {
+    position: absolute;
+    width: 900px;
+    left: 700px;
+    top: 0px;
+    bottom: px;
+}
+
+.por-que-nos-escolher .cachorro-impressionado-container img {
+    width: 100%;
 }
