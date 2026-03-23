@@ -24,7 +24,11 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor-gradient1);
-    padding: 30px;
+    padding: 20px;
+}
+
+header .logo img {
+    width: 80px;
 }
 
 nav ul {
@@ -42,10 +46,18 @@ nav a {
     font-size: 18px;
     font-family: Poppins;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+nav a:hover {
+    border-radius: 10px;
+    padding: 0px 8px 0px 8px;
+    color: var(--cor2);
+}
+
 .seta {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 25px;
     margin-top: auto;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -63,7 +75,7 @@ nav a {
     display: flex;
     position: relative;
     background: linear-gradient(160deg, var(--cor-gradient1) 20%, var(--cor-gradient2) 100%);
-    height: 550px;
+    height: 600px;
     align-items: center;
     overflow: hidden;
     box-shadow: 0px 10px 20px -20px black;
@@ -112,6 +124,7 @@ nav a {
 .servicos-container {
     display: flex;
     margin: auto;
+    margin-bottom: 40px;
 }
 
 .servicos-grid {
@@ -150,8 +163,11 @@ icone img {
 }
 
 .sobre {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     display: flex;
-    margin: 90px;
+    margin-bottom: 150px;
 }
 
 .textos-container {
@@ -160,6 +176,7 @@ icone img {
     max-width: 600px;
     text-align: justify;
     font-family: Nunito;
+    font-size: 20px;
 }
 
 .textos-container h1 {
@@ -170,14 +187,13 @@ icone img {
 .textos-container h4 {
     color: var(--cor3);
     font-size: 18px;
-    padding-top: 100px;
-    /*Alinhar o texto com o bottom do iframe*/
+    padding-top: 30px;
 }
 
 .imagem-sobre {
     padding-left: 70px;
     /*Talver aumentar o padding */
-    width: 620px;
+    width: 550px;
 }
 
 .imagem-sobre img {
@@ -187,13 +203,16 @@ icone img {
 }
 
 .localizacao {
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
     display: flex;
     margin: 90px;
 }
 
 .iframe-container {
-    width: 620px;
-    height: 500px;
+    min-width: 520px;
+    height: 400px;
     padding-left: 70px;
 }
 
@@ -203,4 +222,194 @@ icone img {
     border: none;
     border-radius: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.pets-container {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin: 50px;
+    gap: 80px;
+}
+
+.pets-container .pets-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.pets-container .pets-grid img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+.pets-container .pets-grid p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Nunito;
+}
+
+.pets-container .pets-grid p strong {
+    color: var(--cor1);
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.por-que-nos-escolher {
+    position: relative;
+    height: 500px;
+    background: #1C4E80;
+    background: linear-gradient(132deg, rgba(28, 78, 128, 1) 28%, rgba(47, 128, 237, 1) 100%);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    font-family: Nunito;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.por-que-nos-escolher .titulo {
+    color: var(--cor2);
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.por-que-nos-escolher .titulo i {
+    margin-right: 10px;
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container h2 {
+    font-size: 26px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+}
+
+.por-que-nos-escolher .por-que-nos-escolher-container p {
+    margin-bottom: 20px;
+}
+
+.por-que-nos-escolher .cachorro-impressionado-container {
+    position: absolute;
+    width: 900px;
+    left: 700px;
+    top: 0px;
+    bottom: px;
+}
+
+.por-que-nos-escolher .cachorro-impressionado-container img {
+    width: 100%;
+}
+
+.por-que-nos-escolher .botao {
+    margin-top: 30px;
+    transition: all 0.2s ease;
+}
+
+.por-que-nos-escolher .botao {
+    color: white;
+    width: fit-content;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: var(--cor2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Poppins;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.por-que-nos-escolher .botao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 12px #f2984a90;
+}
+
+.antes-depois {
+    margin: auto;
+}
+
+.antes-depois .imagens-container {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+    border: var(--cor1) solid 4px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.antes-depois .imagens-container img {
+    width: 100%;
+}
+
+.antes-depois .textos {
+    margin: auto;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: Nunito;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.067);
+}
+
+.antes-depois .textos h3 {
+    font-weight: 500;
+}
+
+.antes-depois .textos h3 strong {
+    color: var(--cor1);
+    font-weight: 800;
+    font-size: 22px;
+}
+
+footer {
+    background-color: var(--cor4);
+    font-family: Nunito;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.fa-brands.fa-whatsapp {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 40px;
+    color: white;
+    background-color: #25D366;
+    padding: 10px;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.fa-brands.fa-whatsapp:hover {
+    transform: translateY(-5px);
 }
