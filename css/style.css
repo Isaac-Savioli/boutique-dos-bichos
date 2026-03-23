@@ -70,6 +70,7 @@ nav a:hover {
 .menu-item:hover .seta {
     transform: rotate(90deg);
 }
+
 .banner-hero {
     display: flex;
     position: relative;
