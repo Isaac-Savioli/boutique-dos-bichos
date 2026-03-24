@@ -875,7 +875,7 @@ footer {
     }
 
     .pets-grid p {
-        width: 100vw;
+        width: 95vw;
     }
 
     .pets-grid .thor {
@@ -962,7 +962,7 @@ footer {
         margin-bottom: 40px;
         flex-direction: column;
         height: auto;
-        width: 100vw;
+        width: 95vw;
         align-items: center;
         justify-content: center;
     }
