@@ -51,8 +51,7 @@ nav a {
 
 nav a:hover {
     border-radius: 10px;
-    padding: 0px 8px 0px 8px;
-    color: var(--cor2);
+    text-decoration: underline;
 }
 
 .seta {
@@ -62,11 +61,13 @@ nav a:hover {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 .menu-item {
     position: relative;
     display: flex;
     padding-bottom: 10px;
 }
+
 .menu-item:hover .seta {
     transform: rotate(90deg);
 }
@@ -177,6 +178,7 @@ icone img {
     text-align: justify;
     font-family: Nunito;
     font-size: 20px;
+    margin: 0px 0px 0px 30px;
 }
 
 .textos-container h1 {
@@ -192,8 +194,8 @@ icone img {
 
 .imagem-sobre {
     padding-left: 70px;
-    /*Talver aumentar o padding */
     width: 550px;
+    margin-right: 30px;
 }
 
 .imagem-sobre img {
@@ -212,7 +214,7 @@ icone img {
 
 .iframe-container {
     min-width: 520px;
-    height: 400px;
+    height: 500px;
     padding-left: 70px;
 }
 
@@ -264,7 +266,7 @@ icone img {
     position: relative;
     height: 500px;
     background: #1C4E80;
-    background: linear-gradient(132deg, rgba(28, 78, 128, 1) 28%, rgba(47, 128, 237, 1) 100%);  
+    background: linear-gradient(132deg, rgba(28, 78, 128, 1) 28%, rgba(47, 128, 237, 1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -412,4 +414,329 @@ footer {
 
 .fa-brands.fa-whatsapp:hover {
     transform: translateY(-5px);
+}
+
+@media (max-width: 1300px) {
+    .antes-depois .imagens-container {
+        width: 800px;
+        height: 400px;
+    }
+
+    .antes-depois .textos {
+        width: 550px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .localizacao {
+        position: relative;
+        justify-content: left;
+        margin: 50px;
+    }
+
+    .iframe-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 450px;
+        top: 50px;
+    }
+
+    .iframe-container iframe {
+        width: 400px;
+        height: 400px;
+    }
+
+    .localizacao .textos-container {
+        text-align: left;
+        width: 450px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .pets-container {
+        gap: 100px;
+    }
+
+    .pets-grid {
+        width: 100px;
+    }
+
+    .pets-grid img {
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .pets-grid .thor {
+        margin-top: 20px;
+        transform: rotate(-10deg);
+    }
+
+    .pets-grid .thor:hover {
+        transform: rotate(-5deg);
+    }
+
+    .pets-grid .leon {
+        z-index: 999;
+        transform: translateY(-20px);
+    }
+
+    .pets-grid .leon:hover {
+        transform: scale(1.0)
+    }
+
+    .pets-grid .dingo-max {
+        transform: rotate(10deg);
+    }
+
+    .pets-grid .dingo-max:hover {
+        transform: rotate(5deg);
+
+    }
+
+    .por-que-nos-escolher {
+        padding-left: 50px;
+    }
+
+    .por-que-nos-escolher .titulo {
+        font-size: 28px;
+    }
+
+    .por-que-nos-escolher .cachorro-impressionado-container {
+        left: 500px;
+    }
+
+    .por-que-nos-escolher-container p {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .banner-hero .banner-textos {
+        line-height: 50px;
+    }
+
+    .banner-hero .banner-textos h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .banner-hero .banner-textos h2 {
+        font-size: 20px;
+    }
+
+    .banner-hero .banner-textos h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .banner-hero .cachorro-banner {
+        position: static;
+        width: 140%;
+    }
+
+    .sobre {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .sobre .imagem-sobre {
+        margin-bottom: 30px;
+        padding-left: 0px;
+    }
+
+
+}
+
+@media (max-width: 830px) {
+
+    .banner-hero {
+        overflow: hidden;
+    }
+
+    .banner-hero .cachorro-banner {
+        position: absolute;
+        width: 80%;
+        left: 250px;
+    }
+
+    .banner-hero .banner-textos {
+        max-width: 350px;
+    }
+
+    .banner-hero .banner-textos h2 {
+        line-height: 28px;
+    }
+
+    .servicos {
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .servicos-grid {
+        width: 225px;
+    }
+
+    .servicos-grid h1 {
+        font-size: 24px;
+    }
+
+    .servicos-grid p {
+        font-size: 18px;
+    }
+
+    .sobre {
+        margin-bottom: 100px;
+    }
+
+    .por-que-nos-escolher {
+        overflow: hidden;
+    }
+
+    .por-que-nos-escolher p {
+        max-width: 400px;
+    }
+
+    .por-que-nos-escolher .cachorro-impressionado-container {
+        left: 350px;
+    }
+
+    .antes-depois .imagens-container {
+        width: 650px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .antes-depois .textos {
+        width: 450px;
+    }
+
+    .iframe-container {
+        left: 350px;
+        top: 100px;
+    }
+
+    .localizacao {
+        overflow: hidden;
+    }
+
+    .iframe-container iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .localizacao .textos-container {
+        font-size: 18px;
+        text-align: left;
+        width: 350px;
+    }
+}
+
+@media (max-width: 440px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    nav ul li{
+        margin-top: 14px;
+    }
+
+    .banner-hero {
+        height: 350px;
+    }
+
+    .banner-hero .cachorro-banner {
+        display: none;
+    }
+
+    .banner-hero .banner-textos {
+        width: 400px;
+    }
+
+    .banner-textos h3 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .servicos {
+        margin: auto;
+        margin-bottom: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicos .servicos-container {
+        margin: 0px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .servicos .servicos-grid {
+        margin: 5px 0px 5px 0px;
+        width: 320px;
+    }
+
+    .servicos-grid .icone {
+        width: 50px;
+        height: 50px;
+    }
+
+    .servicos .servicos-grid h1 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .servicos .servicos-grid p {
+        font-size: 16px;
+    }
+
+    .sobre .imagem-sobre {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .sobre .textos-container {
+        width: 320px;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .sobre .textos-container h1 {
+        font-size: 24px;
+    }
+
+    .sobre .textos-container p {
+        font-size: 16px;
+    }
+
+    .pets-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 10px;   
+    }
+
+    .pets-grid p {
+        width: 100vw;
+    }
+
+    .pets-grid .thor {
+        transform: none;
+    }
+
+    .pets-grid .leon {
+        transform: none;
+    }
+
+    .pets-grid .dingo-max {
+        transform: none;
+    }
 }
