@@ -692,7 +692,7 @@ footer {
     }
 
     .servicos .servicos-container .servicos-grid {
-        width: 100vw;
+        width: 90vw;
     }
 
     .pets-container {
@@ -990,5 +990,10 @@ footer {
 
     .fa-brands.fa-whatsapp {
         z-index: 999;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        right: 24px;
+        bottom: 24px;
     }
 }
