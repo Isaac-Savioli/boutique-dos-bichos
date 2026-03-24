@@ -410,6 +410,7 @@ footer {
     cursor: pointer;
     transition: all 0.2s ease;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 999;
 }
 
 .fa-brands.fa-whatsapp:hover {
@@ -549,10 +550,42 @@ footer {
         padding-left: 0px;
     }
 
-
+    .sobre .textos-container {
+        width: 90vw;
+        margin-left: 0px;
+    }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1000px) {
+    .localizacao {
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .localizacao .iframe-container {
+        width: 60vw;
+        position: static;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .localizacao .iframe-container iframe {
+        width: 90%;
+    }
+
+    .localizacao .textos-container {
+        width: 100vw;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 840px) {
 
     .banner-hero {
         overflow: hidden;
@@ -592,6 +625,10 @@ footer {
 
     .sobre {
         margin-bottom: 100px;
+    }
+
+    .imagem-sobre {
+        margin-right: 0px;
     }
 
     .por-que-nos-escolher {
@@ -635,6 +672,108 @@ footer {
         text-align: left;
         width: 350px;
     }
+
+    .por-que-nos-escolher .cachorro-impressionado-container {
+        left: 300px;
+    }
+
+    .por-que-nos-escolher-container p {
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .servicos {
+        justify-content: center;
+    }
+
+    .servicos .servicos-container {
+        flex-direction: column;
+    }
+
+    .servicos .servicos-container .servicos-grid {
+        width: 100vw;
+    }
+
+    .pets-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pets-grid p {
+        width: 100vw;
+    }
+
+    .pets-grid .thor {
+        transform: none;
+    }
+
+    .pets-grid .leon {
+        transform: none;
+    }
+
+    .pets-grid .dingo-max {
+        transform: none;
+    }
+}
+
+@media (max-width: 740px) {
+    .por-que-nos-escolher .cachorro-impressionado-container {
+        display: none;
+    }
+
+    .antes-depois {
+        margin: auto;
+        flex-direction: column;
+        width: 60vw;
+        height: auto;
+    }
+
+    .antes-depois .imagens-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: var(--cor1) solid 2px;
+    }
+
+    .antes-depois .imagens-container img {
+        width: 100%;
+    }
+
+    .antes-depois .textos {
+        margin: auto;
+        margin-top: 10px;
+        flex-direction: column;
+        width: 88vw;
+        height: auto;
+        object-fit: cover;
+        font-size: 14px;
+    }
+
+    .antes-depois .textos h3 strong {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 590px) {
+    .banner-hero {
+        justify-content: center;
+    }
+
+    .banner-hero .cachorro-banner {
+        display: none;
+    }
+
+    .sobre .textos-container {
+        width: 90vw;
+    }
+
+    .imagem-sobre {
+        width: 90vw;
+    }
 }
 
 @media (max-width: 440px) {
@@ -643,13 +782,21 @@ footer {
         align-items: center;
         justify-content: center;
     }
-        
-    nav ul li{
+
+    nav ul {
+        padding: 0px;
+    }
+
+    nav ul li {
         margin-top: 14px;
     }
 
+    nav ul li a {
+        font-size: 16px;
+    }
+
     .banner-hero {
-        height: 350px;
+        height: 500px;
     }
 
     .banner-hero .cachorro-banner {
@@ -673,14 +820,16 @@ footer {
     }
 
     .servicos .servicos-container {
+        width: 80vw;
         margin: 0px;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .servicos .servicos-grid {
         margin: 5px 0px 5px 0px;
-        width: 320px;
+        width: 80vw;
     }
 
     .servicos-grid .icone {
@@ -695,17 +844,18 @@ footer {
 
     .servicos .servicos-grid p {
         font-size: 16px;
+        width: 90vw;
     }
 
     .sobre .imagem-sobre {
-        width: 300px;
+        width: 350px;
         margin: 0px;
     }
 
     .sobre .textos-container {
-        width: 320px;
+        width: 90vw;
         margin: 0px;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 0px;
     }
 
@@ -720,8 +870,8 @@ footer {
     .pets-container {
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
-        gap: 10px;   
+        align-items: center;
+        gap: 10px;
     }
 
     .pets-grid p {
@@ -738,5 +888,107 @@ footer {
 
     .pets-grid .dingo-max {
         transform: none;
+    }
+
+    .por-que-nos-escolher {
+        overflow: hidden;
+        padding: 0px 0px 0px 20px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .por-que-nos-escolher h1 {
+        margin-top: 30px;
+        padding-bottom: 0px;
+        font-size: 24px;
+    }
+
+    .por-que-nos-escolher .botao {
+        margin: 30px auto;
+    }
+
+    .por-que-nos-escolher .cachorro-impressionado-container {
+        margin-top: 20px;
+        width: 500px;
+        position: static;
+        content: url("/img/cachorro-impressionado-mobile.png");
+    }
+
+    .por-que-nos-escolher-container h2 {
+        font-size: 20px;
+    }
+
+    .por-que-nos-escolher-container p {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .antes-depois {
+        margin: auto;
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+    }
+
+    .antes-depois .imagens-container {
+        flex-direction: column;
+        width: 88vw;
+        height: auto;
+        object-fit: cover;
+        border: var(--cor1) solid 2px;
+    }
+
+    .antes-depois .imagens-container img {
+        width: 100%;
+    }
+
+    .antes-depois .textos {
+        margin: auto;
+        margin-top: 10px;
+        flex-direction: column;
+        width: 88vw;
+        height: auto;
+        object-fit: cover;
+        font-size: 14px;
+    }
+
+    .antes-depois .textos h3 strong {
+        font-size: 16px;
+    }
+
+    .localizacao {
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .localizacao .textos-container {
+        margin: 20px;
+        margin-top: 30px;
+        width: auto;
+        text-align: justify;
+        font-size: 16px;
+        ;
+    }
+
+    .localizacao h4 {
+        font-size: 16px;
+    }
+
+    .localizacao .iframe-container {
+        display: none;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .fa-brands.fa-whatsapp {
+        z-index: 999;
     }
 }
