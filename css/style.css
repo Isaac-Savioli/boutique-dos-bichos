@@ -384,6 +384,57 @@ icone img {
     font-size: 22px;
 }
 
+form {
+    background-color: rgb(230, 230, 230);
+    margin: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 500px;
+    font-family: Nunito;
+    gap: 20px;
+}
+
+form .contato-botoes h2 {
+    color: var(--cor2);
+    font-size: 34px;
+    margin-bottom: 0px;
+}
+
+form .contato-botoes {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+}
+
+form .contato-botoes input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+form .contato-botoes textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+form .contato-botoes button {
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form img {
+    width: 50%;
+    object-fit: contain;
+}
+
 footer {
     background-color: var(--cor4);
     font-family: Nunito;
