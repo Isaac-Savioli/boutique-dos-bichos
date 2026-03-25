@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background);
 }
@@ -386,7 +390,10 @@ icone img {
 
 form {
     position: relative;
-    background-color: rgb(230, 230, 230);
+    background: #3280cf;
+    background: #7ca5de;
+    background: #89a1d9;
+    background: linear-gradient(253deg, rgba(137, 161, 217, 1) 5%, rgba(225, 233, 250, 1) 27%);
     margin: 100px 0px 0px 0px;
     padding: 50px 0px 0px 50px;
     display: flex;
@@ -422,7 +429,7 @@ form .contato-botoes input {
     margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid rgb(165, 165, 165);
-    cursor: pointer;
+    cursor: text;
 }
 
 form .contato-botoes input:focus {
