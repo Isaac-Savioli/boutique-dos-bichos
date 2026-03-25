@@ -143,10 +143,19 @@
         <form action="">
             <div class="contato-botoes">
                 <h2>Contato</h2>
-                <input type="text" placeholder="Seu nome">
-                <input type="email" placeholder="Seu email">
-                <input type="tel" placeholder="Seu telefone">
-                <textarea placeholder="Sua mensagem"></textarea>
+
+                <label for="nome">Nome</label>
+                <input minlength="3" maxlength="20" required id="nome" name="nome" type="text" autocomplete="name">
+
+                <label for="email">E-mail</label>
+                <input maxlength="30" required id="email" name="email" autocomplete="email" type="email" placeholder="ex: meuemail@gmail.com">
+
+                <label for="tel">Telefone</label>
+                <input max="12" required id="tel" name="tel" type="tel" placeholder="ex: (00) 00000-0000">
+
+                <label id="msg" name="msg" for="msg">Sua mensagem</label>
+                <textarea required placeholder="Sua mensagem"></textarea>
+                
                 <button type="submit">Enviar</button>
             </div>
             <img src="img/veterinario.png" alt="veterinario">

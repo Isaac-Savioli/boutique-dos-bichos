@@ -385,34 +385,52 @@ icone img {
 }
 
 form {
+    position: relative;
     background-color: rgb(230, 230, 230);
     margin: 100px 0px 0px 0px;
     padding: 50px 0px 0px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
-    height: 500px;
+    height: 600px;
     font-family: Nunito;
-    gap: 20px;
+    overflow: hidden;
 }
 
 form .contato-botoes h2 {
     color: var(--cor2);
-    font-size: 34px;
-    margin-bottom: 0px;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 form .contato-botoes {
     display: flex;
     flex-direction: column;
     width: 300px;
-    gap: 20px;
+    margin: 0px 50px 50px 200px;
+}
+
+form .contato-botoes label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #585858;
 }
 
 form .contato-botoes input {
     padding: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+form .contato-botoes input:focus {
+    cursor: text;
+}
+
+form .contato-botoes textarea {
+    margin-bottom: 20px;
 }
 
 form .contato-botoes textarea {
@@ -431,8 +449,11 @@ form .contato-botoes button {
 }
 
 form img {
-    width: 50%;
-    object-fit: contain;
+    position: absolute;
+    transform: translateY(325px);
+    bottom: 0px;
+    left: 700px;
+    width: 800px;
 }
 
 footer {
@@ -441,6 +462,8 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
+    z-index: 999;
+    position: relative;
 }
 
 .fa-brands.fa-whatsapp {
