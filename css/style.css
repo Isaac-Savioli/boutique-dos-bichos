@@ -390,10 +390,8 @@ icone img {
 
 form {
     position: relative;
-    background: #3280cf;
-    background: #7ca5de;
-    background: #89a1d9;
-    background: linear-gradient(253deg, rgba(137, 161, 217, 1) 5%, rgba(225, 233, 250, 1) 27%);
+    background: #1C4E80;
+background: linear-gradient(346deg, rgba(28, 78, 128, 0.625) 0%, rgb(255, 255, 255) 70%);
     margin: 100px 0px 0px 0px;
     padding: 50px 0px 0px 50px;
     display: flex;
