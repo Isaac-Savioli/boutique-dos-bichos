@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background);
 }
@@ -384,12 +388,87 @@ icone img {
     font-size: 22px;
 }
 
+form {
+    position: relative;
+    background: #1C4E80;
+background: linear-gradient(346deg, rgba(28, 78, 128, 0.625) 0%, rgb(255, 255, 255) 70%);
+    margin: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    height: 600px;
+    font-family: Nunito;
+    overflow: hidden;
+}
+
+form .contato-botoes h2 {
+    color: var(--cor2);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+form .contato-botoes {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0px 50px 50px 200px;
+}
+
+form .contato-botoes label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #585858;
+}
+
+form .contato-botoes input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    cursor: text;
+}
+
+form .contato-botoes input:focus {
+    cursor: text;
+}
+
+form .contato-botoes textarea {
+    margin-bottom: 20px;
+}
+
+form .contato-botoes textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+form .contato-botoes button {
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form img {
+    position: absolute;
+    transform: translateY(325px);
+    bottom: 0px;
+    left: 700px;
+    width: 800px;
+}
+
 footer {
     background-color: var(--cor4);
     font-family: Nunito;
     padding: 20px;
     text-align: center;
     color: white;
+    z-index: 999;
+    position: relative;
 }
 
 .fa-brands.fa-whatsapp {
