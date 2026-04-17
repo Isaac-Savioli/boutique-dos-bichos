@@ -28,7 +28,6 @@ O **Boutique dos Bichos** é um site criado com o objetivo de simular a presenç
 
 - HTML5  
 - CSS3  
-- JavaScript  
 
 ---
 
